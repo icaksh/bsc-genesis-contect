@@ -25,7 +25,7 @@ contract StakeHub is SystemV2, Initializable, Protectable {
     uint256 public constant LOCK_AMOUNT = 1 ether;
     uint256 public constant REDELEGATE_FEE_RATE_BASE = 100000; // 100%
 
-    uint256 public constant BREATHE_BLOCK_INTERVAL = 10 minutes;
+    uint256 public constant BREATHE_BLOCK_INTERVAL = 1 days;
 
     // receive fund status
     uint8 private constant _DISABLE = 0;
@@ -249,15 +249,15 @@ contract StakeHub is SystemV2, Initializable, Protectable {
         minSelfDelegationBNB = 2_000 ether;
         minDelegationBNBChange = 1 ether;
         maxElectedValidators = 45;
-        unbondPeriod = 2 minutes;
+        unbondPeriod = 7 days;
         redelegateFeeRate = 2;
         downtimeSlashAmount = 10 ether;
         felonySlashAmount = 200 ether;
-        downtimeJailTime = 2 minutes;
-        felonyJailTime = 3 minutes;
+        downtimeJailTime = 2 days;
+        felonyJailTime = 30 days;
         maxFelonyBetweenBreatheBlock = 2;
         // Different address will be set depending on the environment
-        __Protectable_init_unchained(0x04d63aBCd2b9b1baa327f2Dda0f873F197ccd186);
+        __Protectable_init_unchained(0x08E68Ec70FA3b629784fDB28887e206ce8561E08);
     }
 
     /*----------------- Implement cross chain app -----------------*/

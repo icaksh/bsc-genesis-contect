@@ -39,7 +39,7 @@ contract SlashIndicator is ISlashIndicator, System, IParamSubscriber, IApplicati
     uint256 public felonySlashRewardRatio;
     bool public enableMaliciousVoteSlash;
 
-    uint256 public constant INIT_FELONY_SLASH_SCOPE = 60; // 1 days(block number)
+    uint256 public constant INIT_FELONY_SLASH_SCOPE = 28800; // 1 days(block number)
 
     uint256 public felonySlashScope;
 
@@ -83,7 +83,6 @@ contract SlashIndicator is ISlashIndicator, System, IParamSubscriber, IApplicati
     function init() external onlyNotInit {
         misdemeanorThreshold = MISDEMEANOR_THRESHOLD;
         felonyThreshold = FELONY_THRESHOLD;
-		enableMaliciousVoteSlash = true;
         alreadyInit = true;
     }
 

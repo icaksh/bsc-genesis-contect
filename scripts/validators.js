@@ -4,14 +4,14 @@ const RLP = require('rlp');
 // Configure
 const validators = [
   {
-    consensusAddr: '0x9fB29AAc15b9A4B7F17c3385939b007540f4d791',
-    feeAddr: '0x9fB29AAc15b9A4B7F17c3385939b007540f4d791',
-    bscFeeAddr: '0x9fB29AAc15b9A4B7F17c3385939b007540f4d791',
+    consensusAddr: '0xf868B9A7677b2C1a273F92Aa6E637C0686002101',
+    feeAddr: '0xf868B9A7677b2C1a273F92Aa6E637C0686002101',
+    bscFeeAddr: '0xf868B9A7677b2C1a273F92Aa6E637C0686002101',
     votingPower: 0x0000000000000064,
   },
 ];
 const bLSPublicKeys = [
-  '0x85e6972fc98cd3c81d64d40e325acfed44365b97a7567a27939c14dbc7512ddcf54cb1284eb637cfa308ae4e00cb5588',
+  '0x8aa662bdcada08668354a96ba3bdc432f388525a1bb32f61db70128b7065bf70de3c4081b44c2064a45c98d60a4c73ee',
 ];
 
 // ======== Do not edit below ========
@@ -55,3 +55,5 @@ exports = module.exports = {
   extraValidatorBytes: extraValidatorBytes,
   validatorSetBytes: validatorSetBytes,
 };
+
+// 0x91dd0624d8cac21b3d1c1a1d5451704d5214b125dadc8f64b97644b09225e93d19cdd03a48dde5f568c957ff05d51bcc0547bfffe0d4f84e2ed891c13cb3064a28ad987c9ff805bde94875a69197037d29ce3f93c802ab034b3c3fb496e4c820
